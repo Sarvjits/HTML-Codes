@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/submit-data"  method="post">
+        <h1>Data Collection</h1>
+        <label for="email">Username:</label>
+        <input type="text" name="username" id="email" placeholder="Enter your email" autofocus> <br>
+        <label for="password">Password:</label>
+        <input type="password" required id="password" placeholder="Enter your password"><br>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" min="2010-10-30" max="2030-10-30" value="2022-10-28"><br>
+        <label for="file">File:</label>
+        <input type="file"><br> 
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color"> <br>
+        <label for="range">Price Range:</label>
+        <input type="range" id="range" name="range"> <br>
+        <label for="button">Button:</label>
+        <input type="button" value="Click Me"> <br>
+        <div>
+        <label for="male">Male :</label>
+        <input type="radio" id="male" name="gender" value="Male"></div>
+        <div>
+        <label for="female">Female :</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        </div>
+        <div>
+        <label for="other">Other :</label>
+        <input type="radio" id="other" name="gender" value="Other">
+       </div> 
+       <div>
+        <label for="apple">Apple :</label>
+        <input type="checkbox" name="Fruit" id="apple" value="Apple"><br
+        <label for="kiwi">Kiwi :</label>
+        <input type="checkbox" name="Fruit" id="kiwi" value="Kiwi"><br>
+        <label for="orange">Orange :</label>
+        <input type="checkbox" name="Fruit" id="orange" value="Orange"><br>
+        <label for="banana">Banana :</label>
+        <input type="checkbox" name="Fruit" id="banana" value="Banana"><br>
+       </div>
+       <div>
+        <label for="country">Choose Your Country :</label>
+        <select name="country" id="country">
+            <option value="India" >India</option>
+            <option value="US">US</option>
+            <option value="UK">Uk</option>
+            <option value="Russia">Russia</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Europe">Europe</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Other">Other</option>
+        </select>
+       </div>
+       <div>
+        <label for="comment">Feedback</label>
+        <textarea name="comment" id="comment" cols="50" rows="6" placeholder="Write your feedback"></textarea>
+       </div>
+
+        <input type="submit">
+    </form>
+
+</body>
+</html>
